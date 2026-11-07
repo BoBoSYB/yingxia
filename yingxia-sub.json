@@ -4,7 +4,7 @@
   "sites": [
     {
       "key": "zys_lzi",
-      "name": "量子 · 16万+ · 全类",
+      "name": "量子",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -14,8 +14,19 @@
       "playerType": 1
     },
     {
+      "key": "zys_bf",
+      "name": "暴风",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "playerType": 1
+    },
+    {
       "key": "zys_gs",
-      "name": "光速 · 11万+ · 更新快",
+      "name": "光速",
       "type": 1,
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -26,7 +37,7 @@
     },
     {
       "key": "zys_hn",
-      "name": "红牛 · 11万+ · 综合",
+      "name": "红牛",
       "type": 1,
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
       "searchable": 1,
@@ -36,8 +47,30 @@
       "playerType": 1
     },
     {
+      "key": "zys_js",
+      "name": "极速",
+      "type": 1,
+      "api": "https://jszyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "playerType": 1
+    },
+    {
+      "key": "zys_ff",
+      "name": "非凡",
+      "type": 1,
+      "api": "http://ffzy.tv/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "playerType": 1
+    },
+    {
       "key": "zys_ik",
-      "name": "爱坤 · 动漫/欧美剧强",
+      "name": "爱坤",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -48,7 +81,7 @@
     },
     {
       "key": "cx_main",
-      "name": "创享影视 · 主站",
+      "name": "创享影视",
       "type": 1,
       "api": "https://ys.cxkjg.cn/api/provide/vod",
       "searchable": 1,
@@ -59,7 +92,7 @@
     },
     {
       "key": "cx_jinying",
-      "name": "创享 · 金鹰线",
+      "name": "创享·金鹰线",
       "type": 1,
       "api": "https://ys.cxkjg.cn/api/provide/vod?source=2680151544",
       "searchable": 1,
@@ -70,42 +103,9 @@
     },
     {
       "key": "cx_sakura",
-      "name": "创享 · 樱花线(动漫)",
+      "name": "创享·樱花线",
       "type": 1,
       "api": "https://ys.cxkjg.cn/api/provide/vod?source=531717376",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "playerType": 1
-    },
-    {
-      "key": "zys_ff",
-      "name": "非凡 · 9.9万+ · 韩剧日漫全",
-      "type": 1,
-      "api": "http://ffzy.tv/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "playerType": 1
-    },
-    {
-      "key": "zys_js",
-      "name": "极速 · 11.6万+ · 更新最勤",
-      "type": 1,
-      "api": "https://jszyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "playerType": 1
-    },
-    {
-      "key": "zys_bf",
-      "name": "暴风 · 17万+ · 泰剧综艺全",
-      "type": 1,
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -115,35 +115,31 @@
   ],
   "lives": [
     {
-      "name": "咪咕 · 含EPG与回看",
+      "name": "咪咕（含EPG与回看）",
       "type": 0,
       "url": "https://develop202.github.io/migu_video/interface.txt",
       "playerType": 1,
-      "ua": "okhttp/3.8.1",
       "timeout": 20,
       "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
       "logo": "https://logo.wyfc.qzz.io/{name}.png"
     },
     {
-      "name": "IPv6 直播(需IPv6网络)",
+      "name": "YSP IPv6",
       "type": 0,
-      "url": "https://raw.githubusercontent.com/qist/tvbox/master/tvboxtv.txt",
+      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
       "playerType": 1,
-      "ua": "okhttp/3.8.1",
       "timeout": 20,
       "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
     },
     {
-      "name": "YSP IPv6(需IPv6网络)",
+      "name": "IPv6 综合直播",
       "type": 0,
-      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/tvboxtv.txt",
       "playerType": 1,
       "timeout": 20,
       "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
     }
   ],
   "parses": [],
-  "dex": [],
-  "usableUrl": [],
-  "blacklist": []
+  "dex": []
 }
