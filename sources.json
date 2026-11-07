@@ -1,0 +1,85 @@
+{
+  "sites": [
+    {
+      "key": "zys_lzi",
+      "name": "量子",
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "note": "16万+，全类，含体育/短剧/AI漫剧"
+    },
+    {
+      "key": "zys_bf",
+      "name": "暴风",
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "note": "17万+，泰剧/综艺全，带评分字段"
+    },
+    {
+      "key": "zys_gs",
+      "name": "光速",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "note": "11.7万+，gsyun/gsm3u8 双线"
+    },
+    {
+      "key": "zys_hn",
+      "name": "红牛",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "note": "11.7万+，hnyun/hnm3u8 双线"
+    },
+    {
+      "key": "zys_js",
+      "name": "极速",
+      "api": "https://jszyapi.com/api.php/provide/vod/",
+      "note": "11.6万+，更新最勤，jsyun/jsm3u8"
+    },
+    {
+      "key": "zys_ff",
+      "name": "非凡",
+      "api": "http://ffzy.tv/api.php/provide/vod/",
+      "note": "9.9万+，韩剧/日韩动漫全"
+    },
+    {
+      "key": "zys_ik",
+      "name": "爱坤",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/",
+      "note": "6.7万+，动漫/欧美剧强，单线 ikm3u8"
+    },
+    {
+      "key": "cx_main",
+      "name": "创享影视",
+      "api": "https://ys.cxkjg.cn/api/provide/vod",
+      "note": "自建聚合，另有 11 条 source= 线路"
+    },
+    {
+      "key": "cx_jinying",
+      "name": "创享·金鹰线",
+      "api": "https://ys.cxkjg.cn/api/provide/vod?source=2680151544",
+      "note": "备用线路"
+    },
+    {
+      "key": "cx_sakura",
+      "name": "创享·樱花线",
+      "api": "https://ys.cxkjg.cn/api/provide/vod?source=531717376",
+      "note": "动漫备用线路"
+    }
+  ],
+  "lives": [
+    {
+      "name": "咪咕（含EPG与回看）",
+      "url": "https://develop202.github.io/migu_video/interface.txt",
+      "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
+      "logo": "https://logo.wyfc.qzz.io/{name}.png",
+      "note": "M3U，声明了 XMLTV 与 catchup 回看"
+    },
+    {
+      "name": "YSP IPv6",
+      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
+      "note": "需要网络有 IPv6，否则全播不动"
+    },
+    {
+      "name": "IPv6 综合直播",
+      "url": "https://raw.githubusercontent.com/qist/tvbox/master/tvboxtv.txt",
+      "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}",
+      "note": "qist/tvbox 维护，需要 IPv6"
+    }
+  ]
+}
