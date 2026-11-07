@@ -1,0 +1,37 @@
+name: 每日测活
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC = 08:00 北京/港时
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["sources.json"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 探测并生成订阅
+        run: python build.py
+
+      - name: 有变化就提交
+        run: |
+          git config user.name  "liveness-bot"
+          git config user.email "liveness-bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add yingxia-sub.json state.json
+            git commit -m "auto: 刷新源可用性 $(date -u +%F)"
+            git push
+          else
+            echo "无变化"
+          fi
