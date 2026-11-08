@@ -91,17 +91,6 @@
       "playerType": 1
     },
     {
-      "key": "cx_jinying",
-      "name": "创享·金鹰线",
-      "type": 1,
-      "api": "https://ys.cxkjg.cn/api/provide/vod?source=2680151544",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "playerType": 1
-    },
-    {
       "key": "cx_sakura",
       "name": "创享·樱花线",
       "type": 1,
